@@ -4,7 +4,7 @@ import DashboardCards from "./components/DashboardCards";
 import MemberForm from "./components/MemberForm";
 import MemberTable from "./components/MemberTable";
 
-import {addMember, deleteMember, getMembers, updateMember} from "../src/services/memberApi.js";
+import { addMember, deleteMember, getMembers, updateMember } from "../src/services/memberApi.js";
 const emptySummary = {
   totalMembers: 0,
   totalAmount: 0,
@@ -91,6 +91,9 @@ const App = () => {
               Manage your trip members and payments
             </p>
           </div>
+          <p className="coordinator" tabIndex={0}>
+            Coordinator - Drx Pankaj Prajapati
+          </p>
         </header>
 
         <DashboardCards summary={summary} />
